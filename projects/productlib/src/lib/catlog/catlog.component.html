@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3" *ngFor="let data of productList">
+      <div class="card" style="width: 18rem;">
+        <img
+          src="{{ data.image }}"
+          height="200px"
+          class="card-img-top"
+          alt="{{ data.name }}"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ data.name }}</h5>
+          <p class="card-text">{{ data.price }} INR</p>
+          <a href="#" class="btn btn-primary">Add to card</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
